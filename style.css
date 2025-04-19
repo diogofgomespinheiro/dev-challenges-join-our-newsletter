@@ -59,15 +59,6 @@ p {
   text-wrap: pretty;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -96,12 +87,15 @@ main {
 }
 
 .header h1 {
-  font-size: 3rem;
+  font-size: max(
+    calc(32px + (48 - 32) * ((min(100vw, 1280px) - 640px) / (1280 - 640))),
+    32px
+  );
   font-weight: 600;
   color: #000000;
 }
 
-.header h3 {
+.header h2 {
   font-size: 1.25rem;
   font-weight: 400;
   color: #6c727f;

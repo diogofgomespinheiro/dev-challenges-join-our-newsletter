@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.75rem;
+
+  width: 100%;
+  max-width: 736px;
+  padding: 5rem 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.header h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6c727f;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  width: 100%;
+  max-width: 552px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  background: #ffffff;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03),
+    0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+.card input {
+  width: 100%;
+  padding: 1.25rem 1rem;
+
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #394150;
+}
+
+.card button {
+  border: none;
+  border-radius: 1rem;
+
+  padding: 1.25rem 2.5rem;
+  width: 100%;
+
+  font-size: 1rem;
+  font-weight: 500;
+  background: #284bce;
+  color: #ffffff;
+
+  transition: filter 0.2s;
+}
+
+.card button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+.card__footer {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #394150;
+}
+
+.author-info {
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+.author-info a {
+  text-decoration: none;
+  color: #284bce;
+}

@@ -96,7 +96,10 @@ main {
 }
 
 .header h2 {
-  font-size: 1.25rem;
+  font-size: max(
+    calc(16px + (20 - 16) * ((min(100vw, 1280px) - 640px) / (1280 - 640))),
+    16px
+  );
   font-weight: 400;
   color: #6c727f;
 }
